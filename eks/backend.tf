@@ -10,7 +10,7 @@ terraform {
     region         = "ap-south-1"
     key            = "saisree/terraform.tfstate"
     dynamodb_table = "Lock-Files"
-    encrypt        = true
+    use_lockfile        = true
   }
 }
 
