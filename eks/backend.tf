@@ -6,7 +6,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = "sreekanth-s3-demo-xyz" # change this
+    bucket         = "srikanthkumar-s3-demo-xyz" # change this
     key            = "saisree/terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true
