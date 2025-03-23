@@ -6,11 +6,11 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = "sreekanth-s3-demo-xyz"
-    region         = "ap-south-1"
+    bucket         = "sreekanth-s3-demo-xyz" # change this
     key            = "saisree/terraform.tfstate"
-    dynamodb_table = "Lock-Files"
-    use_lockfile        = true
+    region         = "us-east-1"
+    encrypt        = true
+    dynamodb_table = "terraform-lock"
   }
 }
 
