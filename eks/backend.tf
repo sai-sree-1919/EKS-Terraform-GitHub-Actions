@@ -10,7 +10,7 @@ terraform {
     key            = "saisree/terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true
-    dynamodb_table = "terraform-lock"
+    dynamodb_table = "srikanth-lock"
   }
 }
 
